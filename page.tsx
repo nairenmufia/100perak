@@ -26,3 +26,6 @@ export default function Page() {
     </div>
   )
 }
+export default function Page() {
+  return <h1 style={{color:'white', background:'black', padding:50}}>100 PERAK UDAH HIDUP 🔥</h1>
+}
