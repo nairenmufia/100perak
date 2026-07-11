@@ -1,3 +1,8 @@
 export default function Home() {
-  return <h1>Halo 100perak</h1>
+  return (
+    <main style={{padding: 50, textAlign: 'center'}}>
+      <h1>100perak TEST UDAH MUNCUL 🔥</h1>
+      <p>Akhirnya berhasil</p>
+    </main>
+  )
 }
