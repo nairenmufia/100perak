@@ -1,31 +1,34 @@
-export default function Page() {
+"use client"
+import { useState } from "react"
+
+export default function Home() {
+  const [antrian, setAntrian] = useState(1)
+  const [dipanggil, setDipanggil] = useState(0)
+
+  const tambahAntrian = () => setAntrian(antrian + 1)
+  const panggilBerikutnya = () => {
+    if(dipanggil < antrian - 1) setDipanggil(dipanggil + 1)
+  }
+
   return (
-    <div className="bg-black min-h-screen text-white">
-      {/* HEADER */}
-      <header className="p-4 border-b border-gray-800">
-        <h1 className="text-2xl font-bold text-center">100 PERAK</h1>
-      </header>
+    <main className="flex min-h-screen flex-col items-center justify-center p-8 bg-blue-50">
+      <h1 className="text-4xl font-bold mb-8 text-blue-700">🔥 100 PERAK 🔥</h1>
+      
+      <div className="bg-white rounded-2xl shadow-lg p-8 mb-6 w-full max-w-md text-center">
+        <p className="text-gray-500 mb-2">Nomor Antrian</p>
+        <p className="text-8xl font-bold text-blue-600">{antrian - 1}</p>
+        <button onClick={tambahAntrian} className="mt-4 bg-blue-600 text-white px-6 py-3 rounded-xl">
+          Ambil Antrian
+        </button>
+      </div>
 
-      {/* APLIKASI ANTRIAN */}
-      <main className="p-4">
-        <div className="bg-gray-900 rounded-lg p-6">
-          <h2 className="text-xl font-bold mb-4">Aplikasi Antrian</h2>
-          <p>Ini aplikasi kamu min 🔥</p>
-        </div>
-      </main>
-
-      {/* CARA BERMAIN */}
-      <section className="p-4">
-        <h2 className="text-xl font-bold mb-2">Cara Bermain</h2>
-      </section>
-
-      {/* FOOTER */}
-      <footer className="p-4 border-t border-gray-800 text-center">
-        <p>© 2026 100 Perak</p>
-      </footer>
-    </div>
+      <div className="bg-green-100 rounded-2xl shadow-lg p-8 w-full max-w-md text-center">
+        <p className="text-gray-500 mb-2">Sedang Dipanggil</p>
+        <p className="text-8xl font-bold text-green-600">{dipanggil}</p>
+        <button onClick={panggilBerikutnya} className="mt-4 bg-green-600 text-white px-6 py-3 rounded-xl">
+          Panggil Berikutnya
+        </button>
+      </div>
+    </main>
   )
-}
-export default function Page() {
-  return <h1 style={{color:'white', background:'black', padding:50}}>100 PERAK UDAH HIDUP 🔥</h1>
 }
