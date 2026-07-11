@@ -1,9 +1,9 @@
-import { HeaderSitus } from "./components/HeaderSitus"
-import { AplikasiAntrian } from "./components/AplikasiAntrian"
-import { CaraBermain } from "./components/CaraBermain"
-import { KakiSitus } from "./components/KakiSitus"
+import { HeaderSitus } from "./aplikasi/components/HeaderSitus"
+import { AplikasiAntrian } from "./aplikasi/components/AplikasiAntrian"
+import { CaraBermain } from "./aplikasi/components/CaraBermain"
+import { KakiSitus } from "./aplikasi/components/KakiSitus"
 
-export default function App() {
+export default function Page() {
   return (
     <div className="bg-black min-h-screen">
       <HeaderSitus />
