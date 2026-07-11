@@ -1,7 +1,7 @@
-import { HeaderSitus } from "./aplikasi/components/HeaderSitus"
-import { AplikasiAntrian } from "./aplikasi/components/AplikasiAntrian"
-import { CaraBermain } from "./aplikasi/components/CaraBermain"
-import { KakiSitus } from "./aplikasi/components/KakiSitus"
+import { HeaderSitus } from "./components/HeaderSitus"
+import { AplikasiAntrian } from "./AplikasiAntrian"
+import { CaraBermain } from "./components/CaraBermain"
+import { KakiSitus } from "./components/KakiSitus"
 
 export default function Page() {
   return (
