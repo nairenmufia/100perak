@@ -1,4 +1,7 @@
-import { Analytics } from '@vercel/analytics/next';
+export const metadata = {
+  title: '100perak',
+  description: 'Web 100perak',
+}
 
 export default function RootLayout({
   children,
@@ -6,11 +9,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>
-        {children}
-        <Analytics />
-      </body>
+    <html lang="id">
+      <body>{children}</body>
     </html>
   )
 }
