@@ -1,16 +1,7 @@
-export const metadata = {
-  title: '100perak',
-  description: 'Web 100perak',
-}
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function Home() {
   return (
-    <html lang="id">
-      <body>{children}</body>
-    </html>
+    <main style={{display: 'flex', minHeight: '100vh', alignItems: 'center', justifyContent: 'center'}}>
+      <h1>100perak udah online 🔥</h1>
+    </main>
   )
 }
