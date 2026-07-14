@@ -1,12 +1,7 @@
-export const metadata = {
-  title: "100perak",
-  description: "Website 100perak",
-}
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="id">
-      <body style={{ margin: 0 }}>{children}</body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   )
 }
